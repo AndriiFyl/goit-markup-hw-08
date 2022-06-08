@@ -1,0 +1,100 @@
+// Список соцсетей в карточках участников команды //
+
+.team__list-networks {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.team__item-networks{
+
+    &:not(:last-child) {
+    margin-right: 10px;
+}
+}
+
+.team__link-networks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: #AFB1B8;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.team__link-networks {
+
+    &:hover,
+    &:focus {
+
+    background-color: var(--accent-background-color);
+    color: var(--extra-text-color);
+}
+}
+
+.team__icon-networks {
+    fill: currentColor;
+}
+
+
+
+
+
+// Список ссылок (соц.иконок) в футере //
+
+.footer__join {
+    margin-left: 70px;
+}
+
+.join__title {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--extra-text-color);
+}
+
+.join__list-networks {
+    display: flex;
+}
+
+.list-networks__item {
+
+    &:not(:last-child){
+    margin-right: 10px;
+}
+}
+
+.list-networks__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: #FFFFFF;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--extra-text-color);
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.list-networks__link {
+ 
+    &:hover,
+    &:focus {
+    background-color: var(--accent-background-color);
+}
+}
+
+.list-networks__icon {
+    fill: currentColor;
+}

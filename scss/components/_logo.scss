@@ -1,0 +1,23 @@
+.logo {
+    font-family: var(--secondary-font);
+    font-size: 26px;
+    line-height: 1.2;
+}
+
+.navigation__logo {
+    color: var(--primary-text-color);
+}
+
+.navigation__logo-part {
+    color: var(--accent-text-color);
+}
+
+.footer__logo {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: var(--extra-text-color);
+}
+
+.footer__logo-part {
+        color: var(--accent-text-color);
+    }

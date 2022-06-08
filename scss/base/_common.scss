@@ -1,0 +1,17 @@
+html {
+    box-sizing: border-box;
+}
+
+.form-modal-input *,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    font-family: var(--main-font);
+    color: var(--primary-text-color);
+    background-color: var(--primary-background-color);
+
+}
