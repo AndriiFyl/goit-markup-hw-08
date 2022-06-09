@@ -1,25 +1,47 @@
-.benefits-section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
 
 .benefits {
-    display: flex;
-    flex-wrap: wrap;
+
+    @include media-query(tablet) {
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
+      
 
 .benefits__item {
-    width: 270px;
-    margin-right: 30px;
     align-items: center;
+
+    @include media-query(mobile-only) {
+    &:not(:last-child) {
+     margin-bottom: 30px;
+}
+    width: 100%;
+  }
+
+   @include media-query(tablet) {
+       margin-bottom: 30px;
+       width: 354px;
+
+       &:nth-child(2n+1) {
+       margin-right: 30px;
+       }
+
+        &:nth-last-child(-n+2) {
+        margin-bottom: 0;
+        } 
+   }
+
+   @include media-query(desktop) {
+    &:not(:last-child) {
+        margin-right: 30px;
+        }
+        margin-bottom: 0;
+        width: 270px;
+   }
 }
 
-.benefits__item:nth-child(4n) {
-    margin-right: 0;
-}
 
 .benefits__box {
-    width: 270px;
     height: 120px;
     background-color: var(--extra-background-color);
     border-radius: 4px;
@@ -42,6 +64,11 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--primary-text-color);
+
+    @include media-query(mobile-only) {
+        text-align: center;
+        }
+  
 }
 
 .benefits__text {
@@ -50,3 +77,60 @@
     letter-spacing: 0.03em;
     color: var(--secondary-text-color);
 }
+
+
+
+
+
+// .benefits-section {
+//     padding-top: 94px;
+//     padding-bottom: 94px;
+// }
+
+// .benefits {
+//     display: flex;
+//     flex-wrap: wrap;
+// }
+
+// .benefits__item {
+//     width: 270px;
+//     margin-right: 30px;
+//     align-items: center;
+// }
+
+// .benefits__item:nth-child(4n) {
+//     margin-right: 0;
+// }
+
+// .benefits__box {
+//     width: 270px;
+//     height: 120px;
+//     background-color: var(--extra-background-color);
+//     border-radius: 4px;
+//     margin-bottom: 30px;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+// }
+
+// .benefits__icon {
+//     width: 70px;
+//     height: 70px;
+// }
+
+// .benefits__subtitle {
+//     margin-bottom: 10px;
+//     font-weight: 700;
+//     font-size: 14px;
+//     line-height: 1.14;
+//     letter-spacing: 0.03em;
+//     text-transform: uppercase;
+//     color: var(--primary-text-color);
+// }
+
+// .benefits__text {
+//     font-size: 14px;
+//     line-height: 1.7;
+//     letter-spacing: 0.03em;
+//     color: var(--secondary-text-color);
+// }

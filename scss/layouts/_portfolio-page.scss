@@ -1,8 +1,3 @@
-.section.portfolio {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
-
 
 .list.works {
     display: flex;
@@ -48,14 +43,6 @@
         transform 250ms cubic-bezier(0.4, 0, 0.2, 1);}
 }
 
-
-// .link-works:hover .thumb-works::before,
-// .link-works:focus .thumb-works::before {
-
-//     opacity: 1;
-//     transform: translateY(0);
-// }
-
 .link-works {
 
     &:hover,
@@ -75,12 +62,6 @@
 }
     }
 }
-
-// .link-works:hover .description,
-// .link-works:focus .description {
-//     opacity: 1;
-//     transform: translateY(0);
-// }
 
 
 .description {
@@ -102,11 +83,6 @@
         transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-// .link-works:hover .description,
-// .link-works:focus .description {
-//     opacity: 1;
-//     transform: translateY(0);
-// }
 
 .link-works {
     display: block;
