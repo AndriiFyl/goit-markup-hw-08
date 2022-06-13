@@ -27,40 +27,56 @@
 
     <!-- <header class="header">
       <div class="container header__container">
-        <nav class="navigation header__navigation">
-          <a class="navigation__logo logo" href="./index.html"
-            ><span class="navigation__logo-part">Web</span>Studio</a
-          >
-          <ul class="menu navigation__menu list">
-            <li class="menu__item">
-              <a class="menu__link  menu__link--current" href="./index.html">Студия</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="./portfolio.html">Портфолио</a>
-            </li>
-            <li class="menu__item"><a class="menu__link" href="">Контакты</a></li>
-          </ul>
-        </nav>
+        <div class="company-logo">
+        <a class="navigation__logo logo" href="./index.html"
+          ><span class="navigation__logo-part">Web</span>Studio</a
+        >
+        <button type="button" class="menu-button is-open" data-menu-button 
+        aria-expanded="false">
+          <svg width="40px" height="40px" aria-label="Переключатель мобильного меню">
+            <use class="icon-cross" href="./images/icons/form-sprite.svg#icon-close-mobmenu"></use>
+            <use class="icon-menu" href="./images/icons/form-sprite.svg#icon-burger-menu"></use>
+          </svg>
+        </button>
+        </div>
+        <div class="menu-wrapper">
+          <nav class="navigation header__navigation">
+            <ul class="menu navigation__menu list">
+              <li class="menu__item">
+                <a class="menu__link menu__link--current" href="./index.html"
+                  >Студия</a
+                >
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="./portfolio.html">Портфолио</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="">Контакты</a>
+              </li>
+            </ul>
+          </nav>
 
-        <ul class="contacts navigation__contacts list">
-          <li class="contacts__item">
-            <a class="contacts__link" href="mailto:info@devstudio.com">
-              <svg class="contacts__icon" width="16px" height="12px">
-                <use href="./images/icons/sprite.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com
-            </a>
-          </li>
-          <li class="contacts__item">
-            <a class="contacts__link" href="tel:+380961111111">
-              <svg class="contacts__icon" width="10px" height="16px">
-                <use href="./images/icons/sprite.svg#icon-phone"></use></svg
-              >+38 096 111 11 11
-            </a>
-          </li>
-        </ul>
+          <ul class="contacts navigation__contacts list">
+            <li class="contacts__item">
+              <a class="contacts__link" href="mailto:info@devstudio.com">
+                <svg class="contacts__icon" width="16px" height="12px">
+                  <use href="./images/icons/sprite.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com
+              </a>
+            </li>
+            <li class="contacts__item">
+              <a class="contacts__link" href="tel:+380961111111">
+                <svg class="contacts__icon" width="10px" height="16px">
+                  <use href="./images/icons/sprite.svg#icon-phone"></use></svg
+                >+38 096 111 11 11
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header> -->
+
     <main>
       <!-- ________________________
 
@@ -156,7 +172,7 @@
 
      _____________________________ -->
 
-      <section class="benefits-section section">
+      <!-- <section class="benefits-section section">
         <div class="container benefits-section__container">
           <h2 class="benefits-section__title visually-hidden">
             Наши достоинства
@@ -212,7 +228,7 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- _____________________________
 
@@ -614,6 +630,48 @@
         </div>
       </section> -->
 
+      <!-- <div class="mobile-menu">
+        <ul class="nav-mobile mobile-menu__nav-mobile list">
+          <li class="nav-mobile__item">
+            <a href="" class="nav-mobile__link">Студия</a>
+          </li>
+          <li class="nav-mobile__item">
+            <a href="" class="nav-mobile__link">Портфолио</a>
+          </li>
+          <li class="nav-mobile__item">
+            <a href="" class="nav-mobile__link">Контакты</a>
+          </li>
+        </ul>
+
+        <ul class="cont-mobile mobile-menu__cont-mobile list">
+          <li class="cont-mobile__item">
+            <a href="tel:+380961111111" class="cont-mobile__link"
+              >+38 096 111 11 11</a
+            >
+          </li>
+          <li class="cont-mobile__item">
+            <a href="mailto:info@devstudio.com" class="cont-mobile__link"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+
+        <ul class="social-mobile mobile-menu__social-mobile list">
+          <li class="social-mobile__item">
+            <a href="" class="social-mobile__link">Instagram</a>
+          </li>
+          <li class="social-mobile__item">
+            <a href="" class="social-mobile__link">Twitter</a>
+          </li>
+          <li class="social-mobile__item">
+            <a href="" class="social-mobile__link">Facebook</a>
+          </li>
+          <li class="social-mobile__item">
+            <a href="" class="social-mobile__link">LinkedIn</a>
+          </li>
+        </ul>
+      </div> -->
+
       <!-- _________________________
 
     Постоянные клиенты
@@ -622,7 +680,7 @@
 
       <!-- <section class="clients section">
         <div class="container clients__container">
-          <h2 class="section-title">Постоянные клиенты</h2>
+          <h2 class="clients__title section-title">Постоянные клиенты</h2>
           <ul class="clients-list list">
             <li class="clients-list__item">
               <a href="" class="clients-list__link" aria-label="иконка клиента">
@@ -682,7 +740,7 @@
 
     ________________________________ -->
 
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container footer__container">
         <div class="adress-wrap">
           <a class="footer__logo logo" href="./index.html"
@@ -780,8 +838,9 @@
           </div>
         </form>
       </div>
-    </footer> -->
+    </footer>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

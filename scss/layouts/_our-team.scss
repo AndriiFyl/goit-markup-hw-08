@@ -1,35 +1,76 @@
 
+// ==============
+// 2-а версія через GAP
+
+// ===================
 
 .workers {
-    text-align: center;
-    background-color: var(--extra-background-color);
-}
+        text-align: center;
+        background-color: var(--extra-background-color);
+        
+    }
+ 
+.workers__title {
 
-.team {
-    display: flex;
+     font-size: 28px; 
+     line-height: 1.18;
+     margin-bottom: 30px;
+
+    @include media-query(desktop) {
+        font-size: 36px;
+        margin-bottom: 50px;
+    }
+
+}    
+    
+  .team {
+          display: flex;
+          flex-direction: column;
+          gap: 30px;
+
+
+@include media-query(tablet) {
+    flex-direction: row;
     flex-wrap: wrap;
 }
+  }
 
-.team__item {
-    margin-right: 30px;
+ .team__item {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     background-color: var(--primary-background-color);
-}
 
-.team__item {
+    @include media-query(tablet) {
+        flex-basis: calc((100% - 30px) /2);
+    }
 
-    &:nth-child(4n){
-    margin-right: 0;}
-}
+        @include media-query(desktop) {
+        flex-basis: calc((100% - 90px) /4)
+        }
+ } 
 
+//  .team__img {
+//      width: 450px;
 
-.team__box {
+//     @include media-query(tablet) {
+//         width: 354px;
+//     }
+
+//          @include media-query(desktop) {
+//              width: 270px;
+//          }
+//  }
+
+ .team__box {
     padding-top: 30px;
+    padding-bottom: 24px;
+
+@include media-query(desktop) {
     padding-bottom: 30px;
 }
+ }
 
-.team__title {
+ .team__title {
     margin-bottom: 10px;
 
     font-weight: 500;
@@ -37,16 +78,109 @@
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
-}
+     }
 
-.team__info {
+    .team__info {
     font-size: 16px;
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: var(--secondary-text-color);
-    margin-bottom: 16px;
-}
+     margin-bottom: 16px;
+    }
 
+
+
+
+
+// ======================
+
+// 1-а версія
+
+// ======================
+// .workers {
+//     text-align: center;
+//     background-color: var(--extra-background-color);
+// }
+
+// .team {
+//     display: flex;
+//     flex-wrap: wrap;
+
+
+//     @include media-query(mobile-only) {
+//         display: block;
+//     }
+      
+// }
+
+// .team__item {
+//     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+//     border-radius: 0px 0px 4px 4px;
+//     background-color: var(--primary-background-color);
+
+// @include media-query(mobile-only) {
+
+//         &:not(:last-child) {
+//             margin-bottom: 30px;
+//         }
+//     }
+
+//     @include media-query(tablet-only) {
+//         margin-bottom: 30px;
+//         &:nth-child(2n+1) {
+//             margin-right: 30px;
+//         }
+
+//         &:nth-last-child(-n+2) {
+//             margin-bottom: 0px;
+//         }
+// }
+        
+//         @include media-query(desktop) {
+//              &:not(:last-child) {
+//             margin-right: 30px;
+//              }
+        
+//             margin-bottom: 0;         
+//          }   
+// }
+
+// .team__box {
+//     padding-top: 30px;
+//     padding-bottom: 30px;
+    
+// }
+
+// .team__title {
+//     margin-bottom: 10px;
+
+//     font-weight: 500;
+//     font-size: 16px;
+//     line-height: 1.19;
+//     letter-spacing: 0.03em;
+//     color: var(--primary-text-color);
+// }
+
+// .team__info {
+//     font-size: 16px;
+//     line-height: 1.19;
+//     letter-spacing: 0.03em;
+//     color: var(--secondary-text-color);
+//     margin-bottom: 16px;
+// }
+
+
+
+
+
+
+
+
+// ===============
+
+// базова версія 
+
+// ================
 
 
 // .workers {
