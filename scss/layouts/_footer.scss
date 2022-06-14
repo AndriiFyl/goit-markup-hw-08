@@ -4,14 +4,31 @@
     background-color: var(--secondary-background-color);
 }
 
-
 .footer__container {
     display: flex;
+    flex-wrap: wrap;
+
+    @include media-query(desktop) {
+        align-items: baseline;
+    }
     
 
     @include media-query(mobile-only) {
         flex-direction: column;
         text-align: center;
+    }
+
+    .footer__wrap {
+
+        @include media-query(tablet-only) {
+        display: flex;
+    }
+
+    @include media-query(desktop) {
+        display: flex;
+        align-items: baseline;
+    }
+
     }
 
 
@@ -22,10 +39,23 @@
 
 
 // Контакты //
+ 
+.footer__adress-wrap {
+
+    @include media-query(tablet-only) {
+    margin-left: 75px;
+    margin-right: 165px;
+}
+
+    @include media-query(desktop) {
+        margin-right: 70px;
+    }
+}
 
 .adress-wrap__adress {
     font-style: normal;
     margin-bottom: 60px;
+    
 }
 
 .adress-wrap__text {

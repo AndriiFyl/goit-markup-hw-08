@@ -47,12 +47,16 @@
 // Список ссылок (соц.иконок) в футере //
 
 .footer__join {
-    // margin-left: 70px;
+    text-align: center;
+
+    @include media-query(mobile-only){
     margin-bottom: 60px;
+    }  
     
-    
-   
-    
+    @include media-query(desktop) {
+        margin-right: 93px;
+        text-align: start;
+    }
 }
 
 .join__title {

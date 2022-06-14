@@ -32,13 +32,67 @@
           ><span class="navigation__logo-part">Web</span>Studio</a
         >
         <button type="button" class="menu-button is-open" data-menu-button 
-        aria-expanded="false">
+        aria-expanded="false"
+        aria-controls="mobile-menu">
           <svg width="40px" height="40px" aria-label="Переключатель мобильного меню">
             <use class="icon-cross" href="./images/icons/form-sprite.svg#icon-close-mobmenu"></use>
             <use class="icon-menu" href="./images/icons/form-sprite.svg#icon-burger-menu"></use>
           </svg>
         </button>
+
+        
+
+
+         <div class="mobile-menu is-open" id="mobile-menu" data-menu>
+        <ul class="nav-mobile mobile-menu__nav-mobile list">
+          <li class="nav-mobile__item">
+            <a href="" class="nav-mobile__link">Студия</a>
+          </li>
+          <li class="nav-mobile__item">
+            <a href="" class="nav-mobile__link">Портфолио</a>
+          </li>
+          <li class="nav-mobile__item">
+            <a href="" class="nav-mobile__link">Контакты</a>
+          </li>
+        </ul>
+
+        <ul class="cont-mobile mobile-menu__cont-mobile list">
+          <li class="cont-mobile__item">
+            <a href="tel:+380961111111" class="cont-mobile__link"
+              >+38 096 111 11 11</a
+            >
+          </li>
+          <li class="cont-mobile__item">
+            <a href="mailto:info@devstudio.com" class="cont-mobile__link"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+
+        <ul class="social-mobile mobile-menu__social-mobile list">
+          <li class="social-mobile__item">
+            <a href="" class="social-mobile__link">Instagram</a>
+          </li>
+          <li class="social-mobile__item">
+            <a href="" class="social-mobile__link">Twitter</a>
+          </li>
+          <li class="social-mobile__item">
+            <a href="" class="social-mobile__link">Facebook</a>
+          </li>
+          <li class="social-mobile__item">
+            <a href="" class="social-mobile__link">LinkedIn</a>
+          </li>
+        </ul>
         </div>
+
+        
+
+
+
+
+
+
+      
         <div class="menu-wrapper">
           <nav class="navigation header__navigation">
             <ul class="menu navigation__menu list">
@@ -630,47 +684,7 @@
         </div>
       </section> -->
 
-      <!-- <div class="mobile-menu">
-        <ul class="nav-mobile mobile-menu__nav-mobile list">
-          <li class="nav-mobile__item">
-            <a href="" class="nav-mobile__link">Студия</a>
-          </li>
-          <li class="nav-mobile__item">
-            <a href="" class="nav-mobile__link">Портфолио</a>
-          </li>
-          <li class="nav-mobile__item">
-            <a href="" class="nav-mobile__link">Контакты</a>
-          </li>
-        </ul>
-
-        <ul class="cont-mobile mobile-menu__cont-mobile list">
-          <li class="cont-mobile__item">
-            <a href="tel:+380961111111" class="cont-mobile__link"
-              >+38 096 111 11 11</a
-            >
-          </li>
-          <li class="cont-mobile__item">
-            <a href="mailto:info@devstudio.com" class="cont-mobile__link"
-              >info@devstudio.com</a
-            >
-          </li>
-        </ul>
-
-        <ul class="social-mobile mobile-menu__social-mobile list">
-          <li class="social-mobile__item">
-            <a href="" class="social-mobile__link">Instagram</a>
-          </li>
-          <li class="social-mobile__item">
-            <a href="" class="social-mobile__link">Twitter</a>
-          </li>
-          <li class="social-mobile__item">
-            <a href="" class="social-mobile__link">Facebook</a>
-          </li>
-          <li class="social-mobile__item">
-            <a href="" class="social-mobile__link">LinkedIn</a>
-          </li>
-        </ul>
-      </div> -->
+     
 
       <!-- _________________________
 
@@ -740,80 +754,82 @@
 
     ________________________________ -->
 
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container footer__container">
-        <div class="adress-wrap">
-          <a class="footer__logo logo" href="./index.html"
-            ><span class="footer__logo-part">Web</span>Studio</a
-          >
-          <address class="adress-wrap__adress">
-            <p class="adress-wrap__text">г. Киев, пр-т Леси Украинки, 26</p>
-            <ul class="adress-wrap__list list">
-              <li class="adress-wrap__item">
-                <a class="adress-wrap__link" href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a
+        <div class="footer__wrap">
+          <div class="footer__adress-wrap">
+            <a class="footer__logo logo" href="./index.html"
+              ><span class="footer__logo-part">Web</span>Studio</a
+            >
+            <address class="adress-wrap__adress">
+              <p class="adress-wrap__text">г. Киев, пр-т Леси Украинки, 26</p>
+              <ul class="adress-wrap__list list">
+                <li class="adress-wrap__item">
+                  <a class="adress-wrap__link" href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="adress-wrap__item">
+                  <a class="adress-wrap__link" href="tel:+380961111111"
+                    >+38 096 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+
+          <div class="join footer__join">
+            <h3 class="join__title">Присоединяйтесь</h3>
+            <ul class="list-networks join__list-networks list">
+              <li class="list-networks__item">
+                <a
+                  href=""
+                  class="list-networks__link"
+                  aria-label="иконка Instagram"
                 >
+                  <svg class="list-networks__icon" width="20" height="20">
+                    <use href="./images/icons/sprite.svg#icon-instagram"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="adress-wrap__item">
-                <a class="adress-wrap__link" href="tel:+380961111111"
-                  >+38 096 111 11 11</a
+
+              <li class="list-networks__item">
+                <a
+                  href=""
+                  class="list-networks__link"
+                  aria-label="иконка Twitter"
                 >
+                  <svg class="list-networks__icon" width="20px" height="20px">
+                    <use href="./images/icons/sprite.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="list-networks__item">
+                <a
+                  href=""
+                  class="list-networks__link"
+                  aria-label="иконка Facebook"
+                >
+                  <svg class="list-networks__icon" width="20px" height="20px">
+                    <use href="./images/icons/sprite.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="list-networks__item">
+                <a
+                  href=""
+                  class="list-networks__link"
+                  aria-label="иконка Linkedin"
+                >
+                  <svg class="list-networks__icon" width="20px" height="20px">
+                    <use href="./images/icons/sprite.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
-
-        <div class="join footer__join">
-          <h3 class="join__title">Присоединяйтесь</h3>
-          <ul class="list-networks join__list-networks list">
-            <li class="list-networks__item">
-              <a
-                href=""
-                class="list-networks__link"
-                aria-label="иконка Instagram"
-              >
-                <svg class="list-networks__icon" width="20" height="20">
-                  <use href="./images/icons/sprite.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-
-            <li class="list-networks__item">
-              <a
-                href=""
-                class="list-networks__link"
-                aria-label="иконка Twitter"
-              >
-                <svg class="list-networks__icon" width="20px" height="20px">
-                  <use href="./images/icons/sprite.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-
-            <li class="list-networks__item">
-              <a
-                href=""
-                class="list-networks__link"
-                aria-label="иконка Facebook"
-              >
-                <svg class="list-networks__icon" width="20px" height="20px">
-                  <use href="./images/icons/sprite.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-
-            <li class="list-networks__item">
-              <a
-                href=""
-                class="list-networks__link"
-                aria-label="иконка Linkedin"
-              >
-                <svg class="list-networks__icon" width="20px" height="20px">
-                  <use href="./images/icons/sprite.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          </div>
         </div>
 
         <form class="sign-form" name="sign-form" method="post">
@@ -838,7 +854,7 @@
           </div>
         </form>
       </div>
-    </footer>
+    </footer> -->
 
     <script src="./js/modal.js"></script>
     <script src="./js/menu.js"></script>
