@@ -45,10 +45,11 @@
     } 
 }
 
-
-.icon-cross,
-.icon-menu {
+.double-icon {
     fill: currentColor;
+    @include media-query(tablet) {
+        display: none;
+    }
 }
 
 .menu-button .icon-cross {

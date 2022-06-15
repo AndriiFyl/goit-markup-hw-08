@@ -10,6 +10,10 @@
         margin-right: auto;
         text-align: center;
     }
+
+        @include media-query(desktop) {
+            margin-left: auto;
+        }
     
     
 }

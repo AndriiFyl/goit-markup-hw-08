@@ -34,16 +34,16 @@
         <button type="button" class="menu-button is-open" data-menu-button 
         aria-expanded="false"
         aria-controls="mobile-menu">
-          <svg width="40px" height="40px" aria-label="Переключатель мобильного меню">
+          <svg class="double-icon" width="40px" height="40px" aria-label="Переключатель мобильного меню">
             <use class="icon-cross" href="./images/icons/form-sprite.svg#icon-close-mobmenu"></use>
             <use class="icon-menu" href="./images/icons/form-sprite.svg#icon-burger-menu"></use>
           </svg>
         </button>
 
         
-
-
-         <div class="mobile-menu is-open" id="mobile-menu" data-menu>
+        <!-- Мобільне меню -->
+                             <!-- is-open            -->
+         <div class="mobile-menu        " id="mobile-menu" data-menu>
         <ul class="nav-mobile mobile-menu__nav-mobile list">
           <li class="nav-mobile__item">
             <a href="" class="nav-mobile__link">Студия</a>
@@ -87,12 +87,8 @@
 
         
 
+        <!-- Десктопне меню -->
 
-
-
-
-
-      
         <div class="menu-wrapper">
           <nav class="navigation header__navigation">
             <ul class="menu navigation__menu list">
@@ -138,7 +134,7 @@
 
       ______________________ -->
 
-      <!-- <section class="section-hero">
+      <section class="section-hero">
         <h1 class="hero-title">
           Эффективные решения <br />
           для вашего бизнеса
@@ -218,7 +214,7 @@
             </form>
           </div>
         </div>
-      </section> -->
+      </section>
 
       <!-- ___________________________
      
@@ -226,7 +222,7 @@
 
      _____________________________ -->
 
-      <!-- <section class="benefits-section section">
+      <section class="benefits-section section">
         <div class="container benefits-section__container">
           <h2 class="benefits-section__title visually-hidden">
             Наши достоинства
@@ -282,7 +278,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- _____________________________
 
@@ -290,40 +286,93 @@
 
       __________________________ -->
 
-      <!-- <section class="doing">
+      <section class="doing">
         <div class="container">
           <h2 class="doing__title section-title">Чем мы занимаемся</h2>
           <ul class="directions list">
+
             <li class="directions__item">
+              <picture>
+
+                 <!-- для десктопа -->
+                <source media="(min-width: 1200px)" 
+                srcset="./images/doing/work_on_laptop.webp 1x,
+                 ./images/doing/work_on_laptop@2x.webp 2x " 
+                type="image/webp">
+
+                <source media="(min-width: 1200px)" 
+                srcset="./images/doing/work_on_laptop.jpg 1x,
+                 ./images/doing/work_on_laptop@2x.jpg 2x " 
+                type="image/jpg">
+
+                <!-- Дефолтные значения -->
               <img
                 class="directions__icon"
-                src="./images/work_on_laptop.jpg"
+                src="./images/doing/work_on_laptop.jpg"
                 alt="работа на ноутбуке"
                 width="370"
+                loading="lazy"
               />
+              </picture>
               <p class="directions__text">Десктопные приложения</p>
             </li>
+
+
             <li class="directions__item">
+               <picture>
+                 <!-- для десктопа -->
+                <source media="(min-width: 1200px)" 
+                srcset="./images/doing/laptop_and_phone.webp 1x,
+                 ./images/doing/laptop_and_phone@2x.webp 2x " 
+                type="image/webp">
+
+                <source media="(min-width: 1200px)" 
+                srcset="./images/doing/laptop_and_phone.jpg 1x,
+                 ./images/doing/laptop_and_phone@2x.jpg 2x " 
+                type="image/jpg">
+
+                <!-- Дефолтные значения -->
               <img
                 class="directions__icon"
-                src="./images/laptop_and_phone.jpg"
+                src="./images/doing/laptop_and_phone.jpg"
                 alt="ноутбук и телефон"
                 width="370"
+                loading="lazy"
               />
+              </picture>
               <p class="directions__text">Мобильные приложения</p>
             </li>
+
+
             <li class="directions__item">
+              <picture>
+                 <!-- для десктопа -->
+                <source media="(min-width: 1200px)" 
+                srcset="./images/doing/tablet.webp 1x,
+                 ./images/doing/tablet@2x.webp 2x " 
+                type="image/webp">
+
+                <source media="(min-width: 1200px)" 
+                srcset="./images/doing/tablet.jpg 1x,
+                 ./images/doing/tablet.jpg 2x " 
+                type="image/jpg">
+
+                <!-- Дефолтные значения -->
               <img
                 class="directions__icon"
-                src="./images/tablet.jpg"
+                src="./images/doing/tablet.jpg"
                 alt="планшет"
                 width="370"
+                loading="lazy"
               />
+              </picture>
               <p class="directions__text">Дизайнерские решения</p>
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
+
+      
 
       <!-- ________________________
 
@@ -331,17 +380,61 @@
 
       ______________________ -->
 
-      <!-- <section class="workers section">
+      <section class="workers section">
         <div class="container workers__container">
           <h2 class="workers__title section-title">Наша команда</h2>
           <ul class="team list">
             <li class="team__item">
-              <img
+              <picture>
+
+                 <!-- для десктопа -->
+                <source media="(min-width: 1200px)" 
+                srcset="./images/workers/worker1_lg.webp 1x,
+                 ./images/workers/worker1_lg@2x.webp 2x " 
+                type="image/webp">
+
+                <source media="(min-width: 1200px)" 
+                srcset="./images/workers/worker1_lg.jpg 1x,
+                 ./images/workers/worker1_lg@2x.jpg 2x " 
+                type="image/jpg">
+
+
+                <!-- для таблетки -->
+                <source media="(min-width: 768px)" 
+                srcset="./images/workers/worker1_md.webp 1x,
+                 ./images/workers/worker1_md@2x.webp 2x " 
+                type="image/webp">
+
+                <source media="(min-width: 768px)" 
+                srcset="./images/workers/worker1_md.jpg 1x,
+                 ./images/workers/worker1_md@2x.jpg 2x " 
+                type="image/jpg">
+
+
+                <!-- для мобильного экрана -->
+                <source media="(max-width: 767px)" 
+                srcset="./images/workers/worker1_small.webp 1x,
+                 ./images/workers/worker1_small@2x.webp 2x " 
+                type="image/webp">
+
+                <source media="(max-width: 767px)" 
+                srcset="./images/workers/worker1_small.jpg 1x,
+                 ./images/workers/worker1_small@2x.jpg 2x " 
+                type="image/jpg">
+
+              
+                <!-- Дефолтное значение -->
+                 <img
                 class="team__img"
-                src="./images/сотрудник1.jpg"
+                src="./images/workers/worker1_small.jpg"
                 alt="сотрудник 1"
-                width="270"
-              />
+                width="450px" 
+                loading="lazy" />
+              
+              </picture>
+
+    
+             
               <div class="team__box">
                 <h3 class="team__title">Игорь Демьяненко</h3>
                 <p class="team__info" lang="en">Product Designer</p>
@@ -423,13 +516,58 @@
             </li>
 
 
+
+            
             <li class="team__item">
-              <img
+
+              <picture>
+
+                 <!-- для десктопа -->
+                <source media="(min-width: 1200px)" 
+                srcset="./images/workers/worker2_lg.webp 1x,
+                 ./images/workers/worker2_lg@2x.webp 2x " 
+                type="image/webp">
+
+                <source media="(min-width: 1200px)" 
+                srcset="./images/workers/worker2_lg.jpg 1x,
+                 ./images/workers/worker2_lg@2x.jpg 2x " 
+                type="image/jpg">
+
+
+                <!-- для таблетки -->
+                <source media="(min-width: 768px)" 
+                srcset="./images/workers/worker2_md.webp 1x,
+                 ./images/workers/worker2_md@2x.webp 2x " 
+                type="image/webp">
+
+                <source media="(min-width: 768px)" 
+                srcset="./images/workers/worker2_md.jpg 1x,
+                 ./images/workers/worker2_md@2x.jpg 2x " 
+                type="image/jpg">
+
+
+                <!-- для мобильного экрана -->
+                <source media="(max-width: 767px)" 
+                srcset="./images/workers/worker2_small.webp 1x,
+                 ./images/workers/worker2_small@2x.webp 2x " 
+                type="image/webp">
+
+                <source media="(max-width: 767px)" 
+                srcset="./images/workers/worker2_small.jpg 1x,
+                 ./images/workers/worker2_small@2x.jpg 2x " 
+                type="image/jpg">
+
+              
+                <!-- Дефолтное значение -->
+                 <img
                 class="team__img"
-                src="./images/сотрудница2.jpg"
-                alt="сотрудница 2"
-                width="270"
-              />
+                src="./images/workers/worker2_small.jpg"
+                alt="сотрудник 2"
+                width="450px" 
+                loading="lazy" />
+          
+              </picture>
+
               <div class="team__box">
                 <h3 class="team__title">Ольга Репина</h3>
                 <p class="team__info" lang="en">Frontend Developer</p>
@@ -512,12 +650,54 @@
 
 
             <li class="team__item">
-              <img
+             <picture>
+
+                 <!-- для десктопа -->
+                <source media="(min-width: 1200px)" 
+                srcset="./images/workers/worker3_lg.webp 1x,
+                 ./images/workers/worker3_lg@2x.webp 2x " 
+                type="image/webp">
+
+                <source media="(min-width: 1200px)" 
+                srcset="./images/workers/worker3_lg.jpg 1x,
+                 ./images/workers/worker3_lg@2x.jpg 2x " 
+                type="image/jpg">
+
+
+                <!-- для таблетки -->
+                <source media="(min-width: 768px)" 
+                srcset="./images/workers/worker3_md.webp 1x,
+                 ./images/workers/worker3_md@2x.webp 2x " 
+                type="image/webp">
+
+                <source media="(min-width: 768px)" 
+                srcset="./images/workers/worker3_md.jpg 1x,
+                 ./images/workers/worker3_md@2x.jpg 2x " 
+                type="image/jpg">
+
+
+                <!-- для мобильного экрана -->
+                <source media="(max-width: 767px)" 
+                srcset="./images/workers/worker3_small.webp 1x,
+                 ./images/workers/worker3_small@2x.webp 2x " 
+                type="image/webp">
+
+                <source media="(max-width: 767px)" 
+                srcset="./images/workers/worker3_small.jpg 1x,
+                 ./images/workers/worker3_small@2x.jpg 2x " 
+                type="image/jpg">
+
+              
+                <!-- Дефолтное значение -->
+                 <img
                 class="team__img"
-                src="./images/сотрудник3.jpg"
+                src="./images/workers/worker3_small.jpg"
                 alt="сотрудник 3"
-                width="270"
-              />
+                width="450px" 
+                loading="lazy" />
+          
+              </picture>
+
               <div class="team__box">
                 <h3 class="team__title">Николай Тарасов</h3>
                 <p class="team__info" lang="en">Marketing</p>
@@ -599,11 +779,54 @@
             </li>
 
             <li class="team__item">
-              <img
+              <picture>
+
+                 <!-- для десктопа -->
+                <source media="(min-width: 1200px)" 
+                srcset="./images/workers/worker4_lg.webp 1x,
+                 ./images/workers/worker4_lg@2x.webp 2x " 
+                type="image/webp">
+
+                <source media="(min-width: 1200px)" 
+                srcset="./images/workers/worker4_lg.jpg 1x,
+                 ./images/workers/worker4_lg@2x.jpg 2x " 
+                type="image/jpg">
+
+
+                <!-- для таблетки -->
+                <source media="(min-width: 768px)" 
+                srcset="./images/workers/worker4_md.webp 1x,
+                 ./images/workers/worker4_md@2x.webp 2x " 
+                type="image/webp">
+
+                <source media="(min-width: 768px)" 
+                srcset="./images/workers/worker4_md.jpg 1x,
+                 ./images/workers/worker4_md@2x.jpg 2x " 
+                type="image/jpg">
+
+
+                <!-- для мобильного экрана -->
+                <source media="(max-width: 767px)" 
+                srcset="./images/workers/worker4_small.webp 1x,
+                 ./images/workers/worker4_small@2x.webp 2x " 
+                type="image/webp">
+
+                <source media="(max-width: 767px)" 
+                srcset="./images/workers/worker4_small.jpg 1x,
+                 ./images/workers/worker4_small@2x.jpg 2x " 
+                type="image/jpg">
+
+              
+                <!-- Дефолтное значение -->
+                 <img
                 class="team__img"
-                src="./images/сотрудник4.jpg"
+                src="./images/workers/worker4_small.jpg"
                 alt="сотрудник 4"
-                width="270"
+                width="450px" 
+                loading="lazy" />
+          
+              </picture>
+
               />
               <div class="team__box">
                 <h3 class="team__title">Михаил Ермаков</h3>
@@ -682,7 +905,7 @@
                   </li>
                 </ul>
         </div>
-      </section> -->
+      </section>
 
      
 
@@ -692,7 +915,8 @@
 
    ________________________ -->
 
-      <!-- <section class="clients section">
+      <section class="clients section">
+
         <div class="container clients__container">
           <h2 class="clients__title section-title">Постоянные клиенты</h2>
           <ul class="clients-list list">
@@ -745,7 +969,9 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
+   
+   
     </main>
 
     <!-- _____________________________
@@ -754,7 +980,7 @@
 
     ________________________________ -->
 
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container footer__container">
         <div class="footer__wrap">
           <div class="footer__adress-wrap">
@@ -854,7 +1080,7 @@
           </div>
         </form>
       </div>
-    </footer> -->
+    </footer>
 
     <script src="./js/modal.js"></script>
     <script src="./js/menu.js"></script>
