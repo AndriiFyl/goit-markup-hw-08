@@ -21,8 +21,7 @@
 
     // Мобильная версия
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    -webkit-image-set(url(../images/hero/hero_mob.webp) 1x);
-
+    -webkit-image-set(url(../images/hero/hero_mob.webp) 1x); 
    @include media-query(retina) {
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
         url(../images/hero/hero_mob@2x.jpg);

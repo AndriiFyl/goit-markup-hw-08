@@ -10,10 +10,6 @@
     }
 }
 
-
-
-
-
 // МОБИЛЬНОЕ МЕНЮ
 
 
@@ -130,6 +126,11 @@
         
                 background: var(--accent-text-color);
                 border-radius: 2px;
+
+
+                @include media-query(desktop) {
+                        bottom: -7px;    
+                    }
             }
     }
 }
